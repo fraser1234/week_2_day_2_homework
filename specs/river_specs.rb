@@ -15,6 +15,11 @@ class TestRiver < MiniTest::Test
 
   end
 
+  def test_can_get_fish
+    fish = @river.get_fish
+    assert_equal(@fish2.fish_name, fish.fish_name)
+  end
+
   def test_river_name
     assert_equal("Clyde", @river.name)
   end

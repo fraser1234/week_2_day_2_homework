@@ -8,4 +8,9 @@ class Fish
   def fish_name
     return @fish_name
   end
+
+  def get_fish
+    @fish_stock.pop
+  end
+
 end

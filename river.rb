@@ -8,12 +8,12 @@ class River
   end
 
   def river_fish_stock
-    return @stock.fish_stock
+    return @fish_stock
   end
 
-  # def lose_fish(fish)
-  #   index = @stock.index(fish)
-  #   @stock.slice!(index, 1)
-  # end
+  def get_fish
+    @fish_stock.pop
+  end
+
 
 end
